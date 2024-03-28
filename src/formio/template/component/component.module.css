@@ -1,0 +1,25 @@
+/* TODO: can we target div with ref=element more directly? */
+.component div[ref='element'] {
+  display: grid;
+  gap: var(--space-xxs);
+}
+
+/* TODO: this could be nicer */
+.component:global(.formio-component-submit) {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* TODO: this could be nicer */
+.component:global(.formio-component-submit) label {
+  display: none;
+}
+
+.messageContainer {
+  color: var(--amsterdam-color-primary-red);
+  font-family: var(--amsterdam-typography-font-family);
+  font-size: var(--amsterdam-typography-spacious-text-level-6-font-size);
+  font-weight: var(--amsterdam-typography-font-weight-normal);
+  line-height: var(--amsterdam-typography-spacious-text-level-6-line-height);
+}

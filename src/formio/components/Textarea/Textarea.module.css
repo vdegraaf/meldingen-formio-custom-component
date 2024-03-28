@@ -1,0 +1,47 @@
+/**
+ * @license EUPL-1.2+
+ * Copyright (c) 2024 Gemeente Amsterdam
+ */
+
+.textarea {
+  border: none;
+  box-shadow: inset 0 0 0 0.0625rem var(--amsterdam-color-primary-black);
+  box-sizing: border-box;
+  color: var(--amsterdam-color-primary-black);
+  font-family: var(--amsterdam-typography-font-family);
+  font-size: var(--amsterdam-typography-spacious-text-level-5-font-size);
+  font-weight: var(--amsterdam-typography-font-weight-normal);
+  line-height: var(--amsterdam-typography-spacious-text-level-5-line-height);
+  margin-block: 0;
+  outline-offset: var(--amsterdam-focus-outline-offset);
+  padding-block: 0.5rem;
+  padding-inline: 1rem;
+  text-size-adjust: 100%;
+  touch-action: manipulation;
+  width: 100%;
+}
+
+.textarea:hover {
+  box-shadow: inset 0 0 0 0.125rem var(--amsterdam-color-primary-black);
+}
+
+.textarea::placeholder {
+  color: var(--amsterdam-color-neutral-grey3);
+}
+
+.textarea:disabled {
+  background-color: var(--amsterdam-color-primary-white);
+  box-shadow: inset 0 0 0 0.0625rem var(--amsterdam-color-neutral-grey2);
+  color: var(--amsterdam-color-neutral-grey2);
+  cursor: not-allowed;
+}
+
+.textarea:invalid,
+.textarea[aria-invalid='true'] {
+  box-shadow: inset 0 0 0 0.0625rem var(--amsterdam-color-primary-red);
+}
+
+.textarea:invalid:hover,
+.textarea[aria-invalid='true']:hover {
+  box-shadow: inset 0 0 0 0.125rem var(--amsterdam-color-primary-red);
+}

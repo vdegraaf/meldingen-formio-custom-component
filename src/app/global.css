@@ -1,0 +1,44 @@
+body {
+  font-family: 'Amsterdam Sans', Arial, sans-serif;
+  margin-block: 0;
+  margin-inline: 0;
+}
+
+/* Spacing utils */
+
+:root {
+  --amsterdam-grid-gap: var(--amsterdam-grid-spacious-gap);
+  --space-xxs: calc(var(--amsterdam-grid-gap) / 4);
+  --space-xs: calc(var(--amsterdam-grid-gap) / 3);
+  --space-s: calc(var(--amsterdam-grid-gap) / 2);
+  --space-m: var(--amsterdam-grid-gap);
+  --space-l: calc(var(--amsterdam-grid-gap) * 2);
+  --space-xl: calc(var(--amsterdam-grid-gap) * 3);
+}
+
+.util-mbe-xxs {
+  margin-block-end: var(--space-xxs);
+}
+
+.util-mbe-xs {
+  margin-block-end: var(--space-xs);
+}
+
+.util-mbe-s {
+  margin-block-end: var(--space-s);
+}
+
+.util-mbe-m {
+  margin-block-end: var(--space-m);
+}
+
+.util-mbe-l {
+  margin-block-end: var(--space-l);
+}
+
+.util-mbe-xl {
+  margin-block-end: var(--space-xl);
+}
+
+
+#map { height: 500px; width: 100%; }

@@ -1,0 +1,4 @@
+.webform {
+  display: grid;
+  gap: var(--space-m);
+}

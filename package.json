@@ -1,0 +1,81 @@
+{
+  "name": "signalen-public-frontend",
+  "version": "0.0.0",
+  "description": "Frontend for the public Signalen site",
+  "author": "Gemeente Amsterdam",
+  "private": true,
+  "license": "EUPL-1.2",
+  "type": "module",
+  "engines": {
+    "node": "^20",
+    "npm": "^10",
+    "yarn": "please-use-npm",
+    "pnpm": "please-use-npm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alimpens/signals-v2-frontend-poc.git"
+  },
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "npm-run-all --continue-on-error lint:**",
+    "lint:css": "stylelint --allow-empty-input '**/*.{css,scss}'",
+    "lint:js": "next lint",
+    "lint:md": "markdownlint **/*.md --ignore node_modules",
+    "lint-fix": "npm-run-all --continue-on-error lint-fix:** prettier",
+    "lint-fix:css": "stylelint --fix '**/*.{css,scss}'",
+    "lint-fix:js": "next lint --fix",
+    "lint-fix:md": "markdownlint --fix **/*.md",
+    "prepare": "husky install",
+    "prettier": "prettier --write .",
+    "start": "next start",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@amsterdam/design-system-assets": "0.1.6",
+    "@amsterdam/design-system-css": "0.3.0",
+    "@amsterdam/design-system-react": "0.3.0",
+    "@amsterdam/design-system-tokens": "0.3.0",
+    "@formio/js": "5.0.0-rc.39",
+    "@formio/react": "5.3.0",
+    "leaflet": "1.9.4",
+    "next": "14.0.4",
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "devDependencies": {
+    "@testing-library/react": "14.1.2",
+    "@types/leaflet": "1.9.8",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "@typescript-eslint/parser": "^6.18.1",
+    "@vitejs/plugin-react": "4.2.1",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^17.1.0",
+    "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "8.0.0",
+    "jsdom": "23.2.0",
+    "lint-staged": "15.2.0",
+    "markdownlint-cli": "0.38.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "3.1.1",
+    "stylelint": "^16.1.0",
+    "stylelint-config-css-modules": "^4.4.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "6.0.4",
+    "typescript": "5.3.3",
+    "vitest": "1.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alimpens/signals-v2-frontend-poc/issues"
+  },
+  "homepage": "https://github.com/alimpens/signals-v2-frontend-poc#readme"
+}
