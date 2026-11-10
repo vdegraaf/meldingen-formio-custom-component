@@ -36,7 +36,7 @@
     "@amsterdam/design-system-assets": "0.1.6",
     "@amsterdam/design-system-css": "0.3.0",
     "@amsterdam/design-system-react": "0.3.0",
-    "@amsterdam/design-system-tokens": "0.3.0",
+    "@amsterdam/design-system-tokens": "4.4.0",
     "@formio/js": "5.0.0-rc.39",
     "@formio/react": "5.3.0",
     "leaflet": "1.9.4",
